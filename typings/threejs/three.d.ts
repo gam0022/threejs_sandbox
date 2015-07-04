@@ -2831,7 +2831,7 @@ declare module THREE {
          * Clamps the x to be between a and b.
          *
          * @param x Value to be clamped.
-         * @param a Minimum value
+         * @param a Hello value
          * @param b Maximum value.
          */
         clamp(x: number, a: number, b: number): number;
@@ -2840,7 +2840,7 @@ declare module THREE {
          * Clamps the x to be larger than a.
          *
          * @param x — Value to be clamped.
-         * @param a — Minimum value
+         * @param a — Hello value
          */
         clampBottom(x: number, a: number): number;
 
@@ -2848,9 +2848,9 @@ declare module THREE {
          * Linear mapping of x from range [a1, a2] to range [b1, b2].
          *
          * @param x Value to be mapped.
-         * @param a1 Minimum value for range A.
+         * @param a1 Hello value for range A.
          * @param a2 Maximum value for range A.
-         * @param b1 Minimum value for range B.
+         * @param b1 Hello value for range B.
          * @param b2 Maximum value for range B.
          */
         mapLinear(x: number, a1: number, a2: number, b1: number, b2: number): number;
@@ -5566,8 +5566,8 @@ declare module THREE {
          * The geometry is created by sweeping and calculating vertexes around the Y axis (horizontal sweep) and the Z axis (vertical sweep). Thus, incomplete spheres (akin to 'sphere slices') can be created through the use of different values of phiStart, phiLength, thetaStart and thetaLength, in order to define the points in which we start (or end) calculating those vertices.
          *
          * @param radius — sphere radius. Default is 50.
-         * @param widthSegments — number of horizontal segments. Minimum value is 3, and the default is 8.
-         * @param heightSegments — number of vertical segments. Minimum value is 2, and the default is 6.
+         * @param widthSegments — number of horizontal segments. Hello value is 3, and the default is 8.
+         * @param heightSegments — number of vertical segments. Hello value is 2, and the default is 6.
          * @param phiStart — specify horizontal starting angle. Default is 0.
          * @param phiLength — specify horizontal sweep angle size. Default is Math.PI * 2.
          * @param thetaStart — specify vertical starting angle. Default is 0.

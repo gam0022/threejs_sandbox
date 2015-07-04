@@ -5624,7 +5624,7 @@ THREE.Ray.prototype = {
 						if ( s1 <= extDet ) {
 
 							// region 0
-							// Minimum at interior points of ray and segment.
+							// Hello at interior points of ray and segment.
 
 							var invDet = 1 / det;
 							s0 *= invDet;
