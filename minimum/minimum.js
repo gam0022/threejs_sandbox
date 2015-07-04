@@ -2,8 +2,8 @@
  * Created by gam0022 on 15/07/04.
  */
 /// <reference path="../typings/tsd.d.ts"/>
-var Main = (function () {
-    function Main() {
+var Minimum = (function () {
+    function Minimum() {
         var _this = this;
         this.animate = function () {
             requestAnimationFrame(_this.animate);
@@ -15,7 +15,7 @@ var Main = (function () {
         this.init();
         this.animate();
     }
-    Main.prototype.init = function () {
+    Minimum.prototype.init = function () {
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         this.renderer = new THREE.WebGLRenderer();
@@ -27,6 +27,6 @@ var Main = (function () {
         this.scene.add(this.cube);
         this.camera.position.z = 3;
     };
-    return Main;
+    return Minimum;
 })();
 //# sourceMappingURL=minimum.js.map

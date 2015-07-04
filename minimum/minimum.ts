@@ -3,7 +3,7 @@
  */
 /// <reference path="../typings/tsd.d.ts"/>
 
-class Main {
+class Minimum {
     scene:THREE.Scene;
     camera:THREE.Camera;
     renderer:THREE.Renderer;
