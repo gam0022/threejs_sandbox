@@ -10,6 +10,11 @@ class Main {
     cube:THREE.Mesh;
 
     constructor() {
+        this.init();
+        this.animate();
+    }
+
+    init() {
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
@@ -23,8 +28,6 @@ class Main {
         this.scene.add(this.cube);
 
         this.camera.position.z = 3;
-
-        this.animate();
     }
 
     animate = () => {

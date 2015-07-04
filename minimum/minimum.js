@@ -12,6 +12,10 @@ var Main = (function () {
             _this.cube.rotation.y += 0.1;
             _this.renderer.render(_this.scene, _this.camera);
         };
+        this.init();
+        this.animate();
+    }
+    Main.prototype.init = function () {
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         this.renderer = new THREE.WebGLRenderer();
@@ -22,8 +26,7 @@ var Main = (function () {
         this.cube = new THREE.Mesh(geometry, material);
         this.scene.add(this.cube);
         this.camera.position.z = 3;
-        this.animate();
-    }
+    };
     return Main;
 })();
 //# sourceMappingURL=minimum.js.map
