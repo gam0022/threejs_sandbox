@@ -23,7 +23,7 @@ var HelloMaterial = (function () {
         this.scene = new THREE.Scene();
         this.camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 1, 10000);
         this.camera.position.z = 1000;
-        var ambientLight = new THREE.AmbientLight(0x444444);
+        var ambientLight = new THREE.AmbientLight(0x777777);
         this.scene.add(ambientLight);
         var directionalLight = new THREE.DirectionalLight(0xffffff, 0.9);
         directionalLight.position.set(0, 1, 0);
